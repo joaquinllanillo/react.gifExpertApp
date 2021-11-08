@@ -1,2 +1,2 @@
 # react-js
- Learning React JS with Fernando Herrera
+ Just a single React app with Gifs
