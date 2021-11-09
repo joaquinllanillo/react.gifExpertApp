@@ -6,8 +6,8 @@ export const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('');
 
     const handdleInputChange = (e) => {
-        // console.log(e.target.value);
         setInputValue((e.target.value));
+        console.log('handleInputChange llamado');
     }
 
     const handdleSubmit = (e) => {
@@ -23,11 +23,11 @@ export const AddCategory = ({setCategories}) => {
     return (
         <Fragment>
             <form onSubmit = {handdleSubmit}>
+                <p>{inputValue}</p>
                 <input 
                     type = "text" 
                     value = {inputValue} 
                     onChange ={handdleInputChange}>
-
                 </input>
             </form>
         </Fragment>
